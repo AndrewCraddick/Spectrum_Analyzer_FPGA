@@ -37,8 +37,8 @@ dds_compiler_0 dds_compiler_wiz (
 );                                          
 
 ila_0 dds_ila (
-	.clk(clock),     // input wire clk
-	.probe0(m_axis_data_tdata), // input wire [7:0]  probe0  
+	.clk(clock),                 // input wire clk
+	.probe0(m_axis_data_tdata),  // input wire [7:0]  probe0  
 	.probe1(m_axis_phase_tdata), // input wire [31:0]  probe1 
 	.probe2(s_axis_phase_tdata), // input wire [63:0]  probe2 
 	.probe3(state_reg_of_Phase_Accumulator_Control_module)  // input wire [4:0]  probe3

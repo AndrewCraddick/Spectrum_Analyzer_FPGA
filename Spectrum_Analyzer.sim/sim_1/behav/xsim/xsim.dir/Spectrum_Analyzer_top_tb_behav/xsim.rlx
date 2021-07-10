@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4352995604247318482  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 002fb76741f84cbaac688823e4038b29 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Spectrum_Analyzer_top_tb_behav xil_defaultlib.Spectrum_Analyzer_top_tb xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:47:47" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Spectrum_Analyzer_top_tb_behav/xsimk.exe\"   \"xsim.dir/Spectrum_Analyzer_top_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Spectrum_Analyzer_top_tb_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

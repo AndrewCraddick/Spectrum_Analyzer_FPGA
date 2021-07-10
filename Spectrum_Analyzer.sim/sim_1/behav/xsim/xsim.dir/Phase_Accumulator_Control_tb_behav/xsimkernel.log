@@ -1,7 +1,7 @@
-Running: xsim.dir/Phase_Accumulator_Control_tb_behav/xsimk.exe -simmode gui -wdb Phase_Accumulator_Control_tb_behav.wdb -simrunnum 0 -socket 54943
+Running: xsim.dir/Phase_Accumulator_Control_tb_behav/xsimk.exe -simmode gui -wdb Phase_Accumulator_Control_tb_behav.wdb -simrunnum 0 -socket 50467
 Design successfully loaded
 Design Loading Memory Usage: 5316 KB (Peak: 5316 KB)
-Design Loading CPU Usage: 15 ms
+Design Loading CPU Usage: 62 ms
 Simulation completed
-Simulation Memory Usage: 6004 KB (Peak: 6004 KB)
-Simulation CPU Usage: 108 ms
+Simulation Memory Usage: 13968 KB (Peak: 13968 KB)
+Simulation CPU Usage: 437 ms

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Jun  2 05:06:45 2021
+| Date         : Thu Jul  8 21:52:17 2021
 | Host         : DESKTOP-TECA72M running 64-bit major release  (build 9200)
 | Command      : report_drc -file Spectrum_Analyzer_top_drc_opted.rpt -pb Spectrum_Analyzer_top_drc_opted.pb -rpx Spectrum_Analyzer_top_drc_opted.rpx
 | Design       : Spectrum_Analyzer_top

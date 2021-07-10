@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Wed Jun  2 05:07:50 2021
+| Date             : Thu Jul  8 21:54:19 2021
 | Host             : DESKTOP-TECA72M running 64-bit major release  (build 9200)
 | Command          : report_power -file Spectrum_Analyzer_top_power_routed.rpt -pb Spectrum_Analyzer_top_power_summary_routed.pb -rpx Spectrum_Analyzer_top_power_routed.rpx
 | Design           : Spectrum_Analyzer_top
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.095        |
+| Total On-Chip Power (W)  | 0.094        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.024        |
@@ -52,20 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.011 |        4 |       --- |             --- |
-| Slice Logic              |     0.001 |     5295 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1356 |     20800 |            6.52 |
-|   CARRY4                 |    <0.001 |       83 |      8150 |            1.02 |
-|   Register               |    <0.001 |     2782 |     41600 |            6.69 |
+| Clocks                   |     0.012 |        4 |       --- |             --- |
+| Slice Logic              |     0.001 |     5265 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     1353 |     20800 |            6.50 |
+|   CARRY4                 |    <0.001 |       75 |      8150 |            0.92 |
+|   Register               |    <0.001 |     2758 |     41600 |            6.63 |
 |   LUT as Shift Register  |    <0.001 |      208 |      9600 |            2.17 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      9600 |            0.25 |
 |   F7/F8 Muxes            |    <0.001 |       15 |     32600 |            0.05 |
 |   Others                 |     0.000 |      419 |       --- |             --- |
-| Signals                  |     0.003 |     4114 |       --- |             --- |
+| Signals                  |     0.002 |     4072 |       --- |             --- |
 | Block RAM                |     0.008 |     49.5 |        50 |           99.00 |
 | I/O                      |    <0.001 |        1 |       106 |            0.94 |
 | Static Power             |     0.071 |          |           |                 |
-| Total                    |     0.095 |          |           |                 |
+| Total                    |     0.094 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -142,20 +142,19 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------------------------+-----------+
-| Name                             | Power (W) |
-+----------------------------------+-----------+
-| Spectrum_Analyzer_top            |     0.024 |
-|   Phase_Accumulator_Control_inst |     0.001 |
-|   dbg_hub                        |     0.003 |
-|     inst                         |     0.003 |
-|       BSCANID.u_xsdbm_id         |     0.003 |
-|   dds_compiler_wiz               |     0.002 |
-|     U0                           |     0.002 |
-|       i_synth                    |     0.002 |
-|   dds_ila                        |     0.018 |
-|     inst                         |     0.018 |
-|       ila_core_inst              |     0.018 |
-+----------------------------------+-----------+
++--------------------------+-----------+
+| Name                     | Power (W) |
++--------------------------+-----------+
+| Spectrum_Analyzer_top    |     0.024 |
+|   dbg_hub                |     0.003 |
+|     inst                 |     0.003 |
+|       BSCANID.u_xsdbm_id |     0.003 |
+|   dds_compiler_wiz       |     0.002 |
+|     U0                   |     0.002 |
+|       i_synth            |     0.002 |
+|   dds_ila                |     0.018 |
+|     inst                 |     0.018 |
+|       ila_core_inst      |     0.018 |
++--------------------------+-----------+
 
 

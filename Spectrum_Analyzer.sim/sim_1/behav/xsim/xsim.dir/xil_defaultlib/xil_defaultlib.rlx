@@ -2,6 +2,10 @@
 2020.2
 Nov 18 2020
 09:47:47
+C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.gen/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd,1622529217,vhdl,,,,dds_compiler_0,,,,,,,,
+C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.gen/sources_1/ip/ila_0/sim/ila_0.v,1622635078,verilog,,C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sources_1/new/Phase_Accumulator_Control.v,,ila_0,,,,,,,,
 C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
 C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sim_1/new/Phase_Accumulator_Control_tb.v,1622544079,verilog,,,,Phase_Accumulator_Control_tb,,,,,,,,
-C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sources_1/new/Phase_Accumulator_Control.v,1622535509,verilog,,C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sim_1/new/Phase_Accumulator_Control_tb.v,,Phase_Accumulator_Control,,,,,,,,
+C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sim_1/new/Spectrum_Analyzer_top_tb.v,1625626743,verilog,,,,Spectrum_Analyzer_top_tb,,,,,,,,
+C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sources_1/new/Phase_Accumulator_Control.v,1625805904,verilog,,C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sim_1/new/Phase_Accumulator_Control_tb.v,,Phase_Accumulator_Control,,,,,,,,
+C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sources_1/new/Spectrum_Analyzer_top.v,1622634384,verilog,,C:/Xilinx/Vivado/Spectrum_Analyzer/Spectrum_Analyzer.srcs/sim_1/new/Spectrum_Analyzer_top_tb.v,,Spectrum_Analyzer_top,,,,,,,,

@@ -11,9 +11,10 @@ module Phase_Accumulator_Control(
     output reg [4:0] state_reg_of_Phase_Accumulator_Control_module  // defines the current state of the FSM
     );
     
-    reg [5:0] number_of_loops; // register that holds the current number of loops the cycle has gone through, the last number
+    reg [6:0] number_of_loops; // register that holds the current number of loops the cycle has gone through, the last number
                                // is the number of phase increment (frequency increment) steps we want to take
-    reg [31:0] current_phase_incr_size, wait_count; 
+    reg [31:0] current_phase_incr_size;
+    reg [6:0] wait_count; 
     
     wire [31:0] time_each_frequency_outputed, phase_incr_step_size;
     assign time_each_frequency_outputed = 32'd100; 
@@ -54,8 +55,8 @@ module Phase_Accumulator_Control(
                             begin
                                 current_phase_incr_size <= 32'd0; // initializing all variables
                                 s_axis_phase_tvalid <= 1'b0;
-                                wait_count <= 32'd0;
-                                number_of_loops <= 6'd0;
+                                wait_count <= 7'd0;
+                                number_of_loops <= 7'd0;
                                 state_reg_of_Phase_Accumulator_Control_module <= Start; // this makes FSM transition to start process of changing the phase step size (increasing it)
                             end
                             
@@ -98,22 +99,22 @@ module Phase_Accumulator_Control(
                             begin
                                 if (wait_count >= time_each_frequency_outputed) // if counter has reached the total desired delay
                                     begin
-                                        wait_count <= 32'd0; // resets the waiting counter
-                                        number_of_loops <= number_of_loops + 1; // add 1 to indicate that we've now covered the frequency corresponding to this step
+                                        wait_count <= 7'd0; // resets the waiting counter
+                                        //number_of_loops <= number_of_loops + 1; // add 1 to indicate that we've now covered the frequency corresponding to this step
                                         state_reg_of_Phase_Accumulator_Control_module <= CheckLoopNumber;
                                     end
                                 else
                                     begin
-                                        wait_count <= wait_count + 1; // counter that counts to 100 clock cycles to delay 100ns 
-                                        state_reg_of_Phase_Accumulator_Control_module <= WaitState;                 // before increasing the phase increment (ie. frequency) by
-                                    end                                         // an amount of "phase_inc_step"
+                                        wait_count <= wait_count + 1;                                // Counter that counts to 100 clock cycles to delay 100ns 
+                                        state_reg_of_Phase_Accumulator_Control_module <= WaitState;  // before increasing the phase increment (ie. frequency) by
+                                    end                                                              // an amount of "phase_inc_step"
                             end
                             
                         CheckLoopNumber : //6
                             begin
-                                if(number_of_loops == 6'd25) // this is the total number of frequency steps, it's the same as the number of times we loop these states
+                                if(number_of_loops == 7'd25) // this is the total number of frequency steps, it's the same as the number of times we loop these states
                                     begin                    // this state checks to see if we've looped the total amount of times yet
-                                        number_of_loops <= 6'd0;  // if we have then we reset the number of loops back to zero
+                                        number_of_loops <= 7'd0;  // if we have then we reset the number of loops back to zero
                                         current_phase_incr_size <= 32'd0; // and we set the amount by which we are increasing the phase increment from the base value back to zero
                                         state_reg_of_Phase_Accumulator_Control_module <= Start; // in either case we head back to the start of the loop
                                     end
